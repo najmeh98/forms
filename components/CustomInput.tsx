@@ -1,5 +1,4 @@
 import React, { ChangeEvent } from "react";
-import styled from "styled-components";
 
 interface TextInput {
   type: "text";
@@ -33,11 +32,9 @@ export const CustomInput: React.FC<Props> = ({
   name,
   id,
   type,
-  className,
   value,
   onChange,
   onBlur,
-  label,
   placeholder,
   icon,
 }) => {
