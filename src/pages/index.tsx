@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SignupForm } from "../../components/SignupForm";
 import { Text } from "../../components/HeaderText";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <main
       className={` mx-auto flex min-h-screen flex-col items-center justify-between p-24   `}
