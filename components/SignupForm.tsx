@@ -7,7 +7,7 @@ import { HiMiniUser } from "react-icons/hi2";
 import { CgKeyhole } from "react-icons/cg";
 import { SignUpSchema } from "./Validation";
 import { CustomButton } from "./CustomButton";
-import { Text } from "./Text";
+import { Text } from "./HeaderText";
 
 const initialValues: ISignupParams = {
   userName: "",
