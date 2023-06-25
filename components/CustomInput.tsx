@@ -49,7 +49,7 @@ export const CustomInput: React.FC<Props> = ({
         </div>
       )}
 
-      <Input
+      <input
         type={type}
         placeholder={placeholder}
         name={name}
@@ -57,32 +57,8 @@ export const CustomInput: React.FC<Props> = ({
         value={value}
         onChange={onChange}
         onBlur={onBlur}
-        className=" outline-none h-[50px] px-9  flex rounded-lg w-full mb-[5px] font-normal  border border-solid border-purple-400 "
+        className=" placeholder:text-base   outline-none h-[50px] px-9 shadow-md shadow-purple-200 transition duration-150 ease-in-out	 flex rounded-lg w-full mb-[5px] font-normal  border border-solid border-purple-500  focus:border-[1.5px] focus:border-[#961acb]"
       />
     </div>
   );
 };
-
-export const Input = styled.input`
-  box-shadow: rgb(51 59 75 / 5%) 0px 16px 40px 0px;
-  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  &::placeholder {
-    font-size: 16px;
-  }
-
-  &:focus {
-    outline: none;
-    border: 1.5px solid #961acb;
-  }
-`;
-
-const Label = styled.label`
-  ${Input}:focus ~ & {
-    transform: translateY(-56%) scale(0.8);
-    padding: 0px 0.2em 0.2em 0.2em;
-    background-color: #ffff;
-    color: #1a73e8;
-    font-size: 20px;
-    top: 0px;
-  }
-`;
