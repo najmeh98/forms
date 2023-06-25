@@ -15,7 +15,7 @@ export const SignUpSchema = Yup.object({
 
   email: Yup.string()
     .email()
-    .required("Required")
+    .required("Please Enter your email !")
     .matches(randomRegex, "Invalid email address"),
 
   password: string()

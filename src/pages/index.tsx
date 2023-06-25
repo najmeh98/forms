@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { SignupForm } from "../../components/SignupForm";
-import { Text } from "../../components/Text";
+import { Text } from "../../components/HeaderText";
 
 export default function Home() {
   return (
